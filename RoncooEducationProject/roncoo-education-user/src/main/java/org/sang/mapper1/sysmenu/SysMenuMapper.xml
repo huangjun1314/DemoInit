@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.mapper1.sysmenu.SysMenuMapper">
+
+    <resultMap id ="BaseResultMap" type="org.sang.entity.SysMenu">
+        <id property ="id" column ="id"  />
+        <result property ="gmtCreate" column ="gmt_create"/>
+        <result property ="gmtModified" column ="gmt_modifie"/>
+        <result property ="statusId" column ="status_id"/>
+        <result property ="sort" column ="sort"/>
+        <result property ="parentId" column ="parent_id"/>
+        <result property ="menuName" column ="menu_name"/>
+        <result property ="menuUrl" column ="menu_url"/>
+        <result property ="apiUrl" column ="api_url"/>
+        <result property ="menuIcon" column ="menu_icon"/>
+        <result property ="remark" column ="remark"/>
+        <result property ="menuType" column ="menu_type"/>
+        <collection property ="sysRoleList" ofType="org.sang.entity.SysRole">
+            <id property ="id" column= "rrid" javaType="long" />
+            <result property ="gmtCreate" column= "gmt_create" />
+            <result property ="gmtModified" column= "gmt_modified" />
+            <result property ="statusId" column= "status_id" />
+            <result property ="sort" column= "sort" />
+            <result property ="roleName" column="rroleName" />
+            <result property ="remark" column="rremark" />
+        </collection>
+    </resultMap>
+    <select id ="getAllSysMenuList" resultMap ="BaseResultMap">
+        SELECT m.*,r.`id` AS rrid,r.role_name AS rroleName , r.remark AS rremark ,r.`status_id`AS status_id,r.`sort`AS sort
+        FROM `sys_menu` m LEFT
+        JOIN `sys_menu_role` mr ON m.`id`=mr.`menu_id` LEFT JOIN `sys_role` r ON mr.`role_id`=r.`id`
+    </select>
+
+    <insert id="insetSetThePpermissions" parameterType="String">
+        INSERT sys_menu_role(menu_id,role_id)
+        VALUES(#{menuId},#{roleId})
+    </insert>
+
+    <delete id="delByRoleId" parameterType="String">
+        DELETE FROM sys_menu_role WHERE role_id=#{roleId}
+    </delete>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_system.sys_menu
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="parentId != null">
+                parent_id = #{parentId},
+            </if>
+            <if test="menuName != null and menuName != ''">
+                menu_name = #{menuName},
+            </if>
+            <if test="menuUrl != null and menuUrl != ''">
+                menu_url = #{menuUrl},
+            </if>
+            <if test="apiUrl != null and apiUrl != ''">
+                api_url = #{apiUrl},
+            </if>
+            <if test="menuIcon != null and menuIcon != ''">
+                menu_icon = #{menuIcon},
+            </if>
+            <if test="remark != null and remark != ''">
+                remark = #{remark},
+            </if>
+            <if test="menuType != null">
+                menu_type = #{menuType},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="SysMenuMap">
+        select
+        id, gmt_create, gmt_modified, status_id, sort, parent_id, menu_name, menu_url, api_url, menu_icon, remark, menu_type
+        from education_system.sys_menu
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="SysMenuMap">
+        select
+        id, gmt_create, gmt_modified, status_id, sort, parent_id, menu_name, menu_url, api_url, menu_icon, remark, menu_type
+        from education_system.sys_menu
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="SysMenuMap">
+        select
+        id, gmt_create, gmt_modified, status_id, sort, parent_id, menu_name, menu_url, api_url, menu_icon, remark, menu_type
+        from education_system.sys_menu
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="parentId != null">
+                and parent_id = #{parentId}
+            </if>
+            <if test="menuName != null and menuName != ''">
+                and menu_name = #{menuName}
+            </if>
+            <if test="menuUrl != null and menuUrl != ''">
+                and menu_url = #{menuUrl}
+            </if>
+            <if test="apiUrl != null and apiUrl != ''">
+                and api_url = #{apiUrl}
+            </if>
+            <if test="menuIcon != null and menuIcon != ''">
+                and menu_icon = #{menuIcon}
+            </if>
+            <if test="remark != null and remark != ''">
+                and remark = #{remark}
+            </if>
+            <if test="menuType != null">
+                and menu_type = #{menuType}
+            </if>
+        </where>
+    </select>
+
+    <resultMap type="org.sang.entity.SysMenu" id="SysMenuMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="parentId" column="parent_id" jdbcType="INTEGER"/>
+        <result property="menuName" column="menu_name" jdbcType="VARCHAR"/>
+        <result property="menuUrl" column="menu_url" jdbcType="VARCHAR"/>
+        <result property="apiUrl" column="api_url" jdbcType="VARCHAR"/>
+        <result property="menuIcon" column="menu_icon" jdbcType="VARCHAR"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+        <result property="menuType" column="menu_type" jdbcType="INTEGER"/>
+    </resultMap>
+
+</mapper>

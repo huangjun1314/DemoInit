@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.course.dao.CourseVideoDao">
+
+    <resultMap type="org.sang.config.pojo.course.CourseVideo" id="CourseVideoMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+        <result property="chapterId" column="chapter_id" jdbcType="INTEGER"/>
+        <result property="periodId" column="period_id" jdbcType="INTEGER"/>
+        <result property="videoName" column="video_name" jdbcType="VARCHAR"/>
+        <result property="videoNo" column="video_no" jdbcType="INTEGER"/>
+        <result property="videoStatus" column="video_status" jdbcType="INTEGER"/>
+        <result property="videoLength" column="video_length" jdbcType="VARCHAR"/>
+        <result property="videoVid" column="video_vid" jdbcType="VARCHAR"/>
+        <result property="videoOasId" column="video_oas_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CourseVideoMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_id, video_name, video_no, video_status, video_length, video_vid, video_oas_id
+        from education_course.course_video
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CourseVideoMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_id, video_name, video_no, video_status, video_length, video_vid, video_oas_id
+        from education_course.course_video
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="CourseVideoMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_id, video_name, video_no, video_status, video_length, video_vid, video_oas_id
+        from education_course.course_video
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="chapterId != null">
+                and chapter_id = #{chapterId}
+            </if>
+            <if test="periodId != null">
+                and period_id = #{periodId}
+            </if>
+            <if test="videoName != null and videoName != ''">
+                and video_name = #{videoName}
+            </if>
+            <if test="videoNo != null">
+                and video_no = #{videoNo}
+            </if>
+            <if test="videoStatus != null">
+                and video_status = #{videoStatus}
+            </if>
+            <if test="videoLength != null and videoLength != ''">
+                and video_length = #{videoLength}
+            </if>
+            <if test="videoVid != null and videoVid != ''">
+                and video_vid = #{videoVid}
+            </if>
+            <if test="videoOasId != null and videoOasId != ''">
+                and video_oas_id = #{videoOasId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into education_course.course_video(gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_id, video_name, video_no, video_status, video_length, video_vid, video_oas_id)
+        values (#{gmtCreate}, #{gmtModified}, #{statusId}, #{sort}, #{courseId}, #{chapterId}, #{periodId}, #{videoName}, #{videoNo}, #{videoStatus}, #{videoLength}, #{videoVid}, #{videoOasId})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_course.course_video
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="courseId != null">
+                course_id = #{courseId},
+            </if>
+            <if test="chapterId != null">
+                chapter_id = #{chapterId},
+            </if>
+            <if test="periodId != null">
+                period_id = #{periodId},
+            </if>
+            <if test="videoName != null and videoName != ''">
+                video_name = #{videoName},
+            </if>
+            <if test="videoNo != null">
+                video_no = #{videoNo},
+            </if>
+            <if test="videoStatus != null">
+                video_status = #{videoStatus},
+            </if>
+            <if test="videoLength != null and videoLength != ''">
+                video_length = #{videoLength},
+            </if>
+            <if test="videoVid != null and videoVid != ''">
+                video_vid = #{videoVid},
+            </if>
+            <if test="videoOasId != null and videoOasId != ''">
+                video_oas_id = #{videoOasId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from education_course.course_video where id = #{id}
+    </delete>
+
+</mapper>

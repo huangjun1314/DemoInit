@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.dao.SysDao">
+
+    <resultMap type="org.sang.systementity.Sys" id="SysMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="videoType" column="video_type" jdbcType="INTEGER"/>
+        <result property="polyvUseid" column="polyv_useid" jdbcType="VARCHAR"/>
+        <result property="polyvWritetoken" column="polyv_writetoken" jdbcType="VARCHAR"/>
+        <result property="polyvReadtoken" column="polyv_readtoken" jdbcType="VARCHAR"/>
+        <result property="polyvSecretkey" column="polyv_secretkey" jdbcType="VARCHAR"/>
+        <result property="fileType" column="file_type" jdbcType="INTEGER"/>
+        <result property="aliyunAccessKeyId" column="aliyun_access_key_id" jdbcType="VARCHAR"/>
+        <result property="aliyunAccessKeySecret" column="aliyun_access_key_secret" jdbcType="VARCHAR"/>
+        <result property="aliyunOssUrl" column="aliyun_oss_url" jdbcType="VARCHAR"/>
+        <result property="aliyunOssBucket" column="aliyun_oss_bucket" jdbcType="VARCHAR"/>
+        <result property="aliyunOasVault" column="aliyun_oas_vault" jdbcType="VARCHAR"/>
+        <result property="payType" column="pay_type" jdbcType="INTEGER"/>
+        <result property="payUrl" column="pay_url" jdbcType="VARCHAR"/>
+        <result property="payKey" column="pay_key" jdbcType="VARCHAR"/>
+        <result property="paySecret" column="pay_secret" jdbcType="VARCHAR"/>
+        <result property="notifyUrl" column="notify_url" jdbcType="VARCHAR"/>
+        <result property="smsCode" column="sms_code" jdbcType="VARCHAR"/>
+        <result property="signName" column="sign_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="SysMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, video_type, polyv_useid, polyv_writetoken, polyv_readtoken, polyv_secretkey, file_type, aliyun_access_key_id, aliyun_access_key_secret, aliyun_oss_url, aliyun_oss_bucket, aliyun_oas_vault, pay_type, pay_url, pay_key, pay_secret, notify_url, sms_code, sign_name
+        from education_system.sys
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="SysMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, video_type, polyv_useid, polyv_writetoken, polyv_readtoken, polyv_secretkey, file_type, aliyun_access_key_id, aliyun_access_key_secret, aliyun_oss_url, aliyun_oss_bucket, aliyun_oas_vault, pay_type, pay_url, pay_key, pay_secret, notify_url, sms_code, sign_name
+        from education_system.sys
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="SysMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, video_type, polyv_useid, polyv_writetoken, polyv_readtoken, polyv_secretkey, file_type, aliyun_access_key_id, aliyun_access_key_secret, aliyun_oss_url, aliyun_oss_bucket, aliyun_oas_vault, pay_type, pay_url, pay_key, pay_secret, notify_url, sms_code, sign_name
+        from education_system.sys
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="videoType != null">
+                and video_type = #{videoType}
+            </if>
+            <if test="polyvUseid != null and polyvUseid != ''">
+                and polyv_useid = #{polyvUseid}
+            </if>
+            <if test="polyvWritetoken != null and polyvWritetoken != ''">
+                and polyv_writetoken = #{polyvWritetoken}
+            </if>
+            <if test="polyvReadtoken != null and polyvReadtoken != ''">
+                and polyv_readtoken = #{polyvReadtoken}
+            </if>
+            <if test="polyvSecretkey != null and polyvSecretkey != ''">
+                and polyv_secretkey = #{polyvSecretkey}
+            </if>
+            <if test="fileType != null">
+                and file_type = #{fileType}
+            </if>
+            <if test="aliyunAccessKeyId != null and aliyunAccessKeyId != ''">
+                and aliyun_access_key_id = #{aliyunAccessKeyId}
+            </if>
+            <if test="aliyunAccessKeySecret != null and aliyunAccessKeySecret != ''">
+                and aliyun_access_key_secret = #{aliyunAccessKeySecret}
+            </if>
+            <if test="aliyunOssUrl != null and aliyunOssUrl != ''">
+                and aliyun_oss_url = #{aliyunOssUrl}
+            </if>
+            <if test="aliyunOssBucket != null and aliyunOssBucket != ''">
+                and aliyun_oss_bucket = #{aliyunOssBucket}
+            </if>
+            <if test="aliyunOasVault != null and aliyunOasVault != ''">
+                and aliyun_oas_vault = #{aliyunOasVault}
+            </if>
+            <if test="payType != null">
+                and pay_type = #{payType}
+            </if>
+            <if test="payUrl != null and payUrl != ''">
+                and pay_url = #{payUrl}
+            </if>
+            <if test="payKey != null and payKey != ''">
+                and pay_key = #{payKey}
+            </if>
+            <if test="paySecret != null and paySecret != ''">
+                and pay_secret = #{paySecret}
+            </if>
+            <if test="notifyUrl != null and notifyUrl != ''">
+                and notify_url = #{notifyUrl}
+            </if>
+            <if test="smsCode != null and smsCode != ''">
+                and sms_code = #{smsCode}
+            </if>
+            <if test="signName != null and signName != ''">
+                and sign_name = #{signName}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into education_system.sys(gmt_create, gmt_modified, status_id, sort, video_type, polyv_useid, polyv_writetoken, polyv_readtoken, polyv_secretkey, file_type, aliyun_access_key_id, aliyun_access_key_secret, aliyun_oss_url, aliyun_oss_bucket, aliyun_oas_vault, pay_type, pay_url, pay_key, pay_secret, notify_url, sms_code, sign_name)
+        values (#{gmtCreate}, #{gmtModified}, #{statusId}, #{sort}, #{videoType}, #{polyvUseid}, #{polyvWritetoken}, #{polyvReadtoken}, #{polyvSecretkey}, #{fileType}, #{aliyunAccessKeyId}, #{aliyunAccessKeySecret}, #{aliyunOssUrl}, #{aliyunOssBucket}, #{aliyunOasVault}, #{payType}, #{payUrl}, #{payKey}, #{paySecret}, #{notifyUrl}, #{smsCode}, #{signName})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_system.sys
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="videoType != null">
+                video_type = #{videoType},
+            </if>
+            <if test="polyvUseid != null and polyvUseid != ''">
+                polyv_useid = #{polyvUseid},
+            </if>
+            <if test="polyvWritetoken != null and polyvWritetoken != ''">
+                polyv_writetoken = #{polyvWritetoken},
+            </if>
+            <if test="polyvReadtoken != null and polyvReadtoken != ''">
+                polyv_readtoken = #{polyvReadtoken},
+            </if>
+            <if test="polyvSecretkey != null and polyvSecretkey != ''">
+                polyv_secretkey = #{polyvSecretkey},
+            </if>
+            <if test="fileType != null">
+                file_type = #{fileType},
+            </if>
+            <if test="aliyunAccessKeyId != null and aliyunAccessKeyId != ''">
+                aliyun_access_key_id = #{aliyunAccessKeyId},
+            </if>
+            <if test="aliyunAccessKeySecret != null and aliyunAccessKeySecret != ''">
+                aliyun_access_key_secret = #{aliyunAccessKeySecret},
+            </if>
+            <if test="aliyunOssUrl != null and aliyunOssUrl != ''">
+                aliyun_oss_url = #{aliyunOssUrl},
+            </if>
+            <if test="aliyunOssBucket != null and aliyunOssBucket != ''">
+                aliyun_oss_bucket = #{aliyunOssBucket},
+            </if>
+            <if test="aliyunOasVault != null and aliyunOasVault != ''">
+                aliyun_oas_vault = #{aliyunOasVault},
+            </if>
+            <if test="payType != null">
+                pay_type = #{payType},
+            </if>
+            <if test="payUrl != null and payUrl != ''">
+                pay_url = #{payUrl},
+            </if>
+            <if test="payKey != null and payKey != ''">
+                pay_key = #{payKey},
+            </if>
+            <if test="paySecret != null and paySecret != ''">
+                pay_secret = #{paySecret},
+            </if>
+            <if test="notifyUrl != null and notifyUrl != ''">
+                notify_url = #{notifyUrl},
+            </if>
+            <if test="smsCode != null and smsCode != ''">
+                sms_code = #{smsCode},
+            </if>
+            <if test="signName != null and signName != ''">
+                sign_name = #{signName},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from education_system.sys where id = #{id}
+    </delete>
+
+</mapper>

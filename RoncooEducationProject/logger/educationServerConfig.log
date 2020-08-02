@@ -1,0 +1,115 @@
+2020/05/13-16:20:06  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-16:20:06  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 963 ms
+2020/05/13-16:20:06  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-16:20:06  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-16:20:06  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-16:20:06  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-16:20:50  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-16:20:50  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1040 ms
+2020/05/13-16:20:51  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-16:20:51  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-16:20:51  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-16:20:51  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-16:21:04  [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-16:21:04  [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 5 ms
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/swagger-ui.html", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/css/typography.css", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/css/reset.css", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/css/screen.css", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/object-assign-pollyfill.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/jquery-1.8.0.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/jquery.wiggle.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/jquery.slideto.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/jquery.ba-bbq.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/lodash.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/backbone-min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/handlebars-4.0.5.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack_extended.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/swagger-ui.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/marked.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/jsoneditor.min.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/lib/swagger-oauth.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/springfox.js", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/css/print.css", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/images/logo_small.png", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/swagger-resources/configuration/ui", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler- Resource not found
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 404 NOT_FOUND
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/fonts/DroidSans-Bold.ttf", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/fonts/DroidSans.ttf", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- "ERROR" dispatch for GET "/error", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020/05/13-16:21:04  [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/webjars/springfox-swagger-ui/images/favicon-32x32.png", parameters={}
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020/05/13-16:21:04  [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor- Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor- Writing [{timestamp=Wed May 13 16:21:04 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020/05/13-16:21:04  [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Exiting from "ERROR" dispatch, status 404
+2020/05/13-16:23:52  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-16:23:52  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1039 ms
+2020/05/13-16:23:52  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-16:23:52  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-16:23:52  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-16:23:52  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-16:24:23  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-16:24:23  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1086 ms
+2020/05/13-16:24:24  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-16:24:24  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-16:24:24  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-16:24:24  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-16:26:14  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-16:26:14  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1277 ms
+2020/05/13-16:26:14  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-16:26:14  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-16:26:14  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-16:26:14  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice

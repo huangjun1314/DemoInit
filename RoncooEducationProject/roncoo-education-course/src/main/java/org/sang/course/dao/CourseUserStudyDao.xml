@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.course.dao.CourseUserStudyDao">
+
+    <resultMap type="org.sang.config.pojo.course.CourseUserStudy" id="CourseUserStudyMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+        <result property="userNo" column="user_no" jdbcType="INTEGER"/>
+        <result property="periodTotal" column="period_total" jdbcType="INTEGER"/>
+        <result property="periodStudy" column="period_study" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CourseUserStudyMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, user_no, period_total, period_study
+        from education_course.course_user_study
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CourseUserStudyMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, user_no, period_total, period_study
+        from education_course.course_user_study
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="CourseUserStudyMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, user_no, period_total, period_study
+        from education_course.course_user_study
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="userNo != null">
+                and user_no = #{userNo}
+            </if>
+            <if test="periodTotal != null">
+                and period_total = #{periodTotal}
+            </if>
+            <if test="periodStudy != null">
+                and period_study = #{periodStudy}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into education_course.course_user_study(gmt_create, gmt_modified, status_id, sort, course_id, user_no, period_total, period_study)
+        values (#{gmtCreate}, #{gmtModified}, #{statusId}, #{sort}, #{courseId}, #{userNo}, #{periodTotal}, #{periodStudy})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_course.course_user_study
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="courseId != null">
+                course_id = #{courseId},
+            </if>
+            <if test="userNo != null">
+                user_no = #{userNo},
+            </if>
+            <if test="periodTotal != null">
+                period_total = #{periodTotal},
+            </if>
+            <if test="periodStudy != null">
+                period_study = #{periodStudy},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from education_course.course_user_study where id = #{id}
+    </delete>
+
+</mapper>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.dao.WebsiteNavArticleDao">
+
+    <resultMap type="org.sang.systementity.WebsiteNavArticle" id="WebsiteNavArticleMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="navId" column="nav_id" jdbcType="INTEGER"/>
+        <result property="artTitle" column="art_title" jdbcType="VARCHAR"/>
+        <result property="artPic" column="art_pic" jdbcType="VARCHAR"/>
+        <result property="artDesc" column="art_desc" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="WebsiteNavArticleMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, nav_id, art_title, art_pic, art_desc
+        from education_system.website_nav_article
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="WebsiteNavArticleMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, nav_id, art_title, art_pic, art_desc
+        from education_system.website_nav_article
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="WebsiteNavArticleMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, nav_id, art_title, art_pic, art_desc
+        from education_system.website_nav_article
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="navId != null">
+                and nav_id = #{navId}
+            </if>
+            <if test="artTitle != null and artTitle != ''">
+                and art_title = #{artTitle}
+            </if>
+            <if test="artPic != null and artPic != ''">
+                and art_pic = #{artPic}
+            </if>
+            <if test="artDesc != null and artDesc != ''">
+                and art_desc = #{artDesc}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into education_system.website_nav_article(gmt_create, gmt_modified, status_id, sort, nav_id, art_title, art_pic, art_desc)
+        values (#{gmtCreate}, #{gmtModified}, #{statusId}, #{sort}, #{navId}, #{artTitle}, #{artPic}, #{artDesc})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_system.website_nav_article
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="navId != null">
+                nav_id = #{navId},
+            </if>
+            <if test="artTitle != null and artTitle != ''">
+                art_title = #{artTitle},
+            </if>
+            <if test="artPic != null and artPic != ''">
+                art_pic = #{artPic},
+            </if>
+            <if test="artDesc != null and artDesc != ''">
+                art_desc = #{artDesc},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from education_system.website_nav_article where id = #{id}
+    </delete>
+
+</mapper>

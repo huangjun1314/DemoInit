@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.course.dao.CourseChapterPeriodDao">
+
+    <resultMap type="org.sang.config.pojo.course.CourseChapterPeriod" id="CourseChapterPeriodMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+        <result property="chapterId" column="chapter_id" jdbcType="INTEGER"/>
+        <result property="periodName" column="period_name" jdbcType="VARCHAR"/>
+        <result property="periodDesc" column="period_desc" jdbcType="VARCHAR"/>
+        <result property="isFree" column="is_free" jdbcType="INTEGER"/>
+        <result property="periodOriginal" column="period_original" jdbcType="NUMERIC"/>
+        <result property="periodDiscount" column="period_discount" jdbcType="NUMERIC"/>
+        <result property="countBuy" column="count_buy" jdbcType="INTEGER"/>
+        <result property="countStudy" column="count_study" jdbcType="INTEGER"/>
+        <result property="isDoc" column="is_doc" jdbcType="INTEGER"/>
+        <result property="docName" column="doc_name" jdbcType="VARCHAR"/>
+        <result property="docUrl" column="doc_url" jdbcType="VARCHAR"/>
+        <result property="isVideo" column="is_video" jdbcType="VARCHAR"/>
+        <result property="videoNo" column="video_no" jdbcType="INTEGER"/>
+        <result property="videoName" column="video_name" jdbcType="VARCHAR"/>
+        <result property="videoLength" column="video_length" jdbcType="VARCHAR"/>
+        <result property="videoVid" column="video_vid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CourseChapterPeriodMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_name, period_desc, is_free, period_original, period_discount, count_buy, count_study, is_doc, doc_name, doc_url, is_video, video_no, video_name, video_length, video_vid
+        from education_course.course_chapter_period
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CourseChapterPeriodMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_name, period_desc, is_free, period_original, period_discount, count_buy, count_study, is_doc, doc_name, doc_url, is_video, video_no, video_name, video_length, video_vid
+        from education_course.course_chapter_period
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="CourseChapterPeriodMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_name, period_desc, is_free, period_original, period_discount, count_buy, count_study, is_doc, doc_name, doc_url, is_video, video_no, video_name, video_length, video_vid
+        from education_course.course_chapter_period
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="chapterId != null">
+                and chapter_id = #{chapterId}
+            </if>
+            <if test="periodName != null and periodName != ''">
+                and period_name = #{periodName}
+            </if>
+            <if test="periodDesc != null and periodDesc != ''">
+                and period_desc = #{periodDesc}
+            </if>
+            <if test="isFree != null">
+                and is_free = #{isFree}
+            </if>
+            <if test="periodOriginal != null">
+                and period_original = #{periodOriginal}
+            </if>
+            <if test="periodDiscount != null">
+                and period_discount = #{periodDiscount}
+            </if>
+            <if test="countBuy != null">
+                and count_buy = #{countBuy}
+            </if>
+            <if test="countStudy != null">
+                and count_study = #{countStudy}
+            </if>
+            <if test="isDoc != null">
+                and is_doc = #{isDoc}
+            </if>
+            <if test="docName != null and docName != ''">
+                and doc_name = #{docName}
+            </if>
+            <if test="docUrl != null and docUrl != ''">
+                and doc_url = #{docUrl}
+            </if>
+            <if test="isVideo != null and isVideo != ''">
+                and is_video = #{isVideo}
+            </if>
+            <if test="videoNo != null">
+                and video_no = #{videoNo}
+            </if>
+            <if test="videoName != null and videoName != ''">
+                and video_name = #{videoName}
+            </if>
+            <if test="videoLength != null and videoLength != ''">
+                and video_length = #{videoLength}
+            </if>
+            <if test="videoVid != null and videoVid != ''">
+                and video_vid = #{videoVid}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into education_course.course_chapter_period(gmt_create, gmt_modified, status_id, sort, course_id, chapter_id, period_name, period_desc, is_free, period_original, period_discount, count_buy, count_study, is_doc, doc_name, doc_url, is_video, video_no, video_name, video_length, video_vid)
+        values (#{gmtCreate}, #{gmtModified}, #{statusId}, #{sort}, #{courseId}, #{chapterId}, #{periodName}, #{periodDesc}, #{isFree}, #{periodOriginal}, #{periodDiscount}, #{countBuy}, #{countStudy}, #{isDoc}, #{docName}, #{docUrl}, #{isVideo}, #{videoNo}, #{videoName}, #{videoLength}, #{videoVid})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_course.course_chapter_period
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="courseId != null">
+                course_id = #{courseId},
+            </if>
+            <if test="chapterId != null">
+                chapter_id = #{chapterId},
+            </if>
+            <if test="periodName != null and periodName != ''">
+                period_name = #{periodName},
+            </if>
+            <if test="periodDesc != null and periodDesc != ''">
+                period_desc = #{periodDesc},
+            </if>
+            <if test="isFree != null">
+                is_free = #{isFree},
+            </if>
+            <if test="periodOriginal != null">
+                period_original = #{periodOriginal},
+            </if>
+            <if test="periodDiscount != null">
+                period_discount = #{periodDiscount},
+            </if>
+            <if test="countBuy != null">
+                count_buy = #{countBuy},
+            </if>
+            <if test="countStudy != null">
+                count_study = #{countStudy},
+            </if>
+            <if test="isDoc != null">
+                is_doc = #{isDoc},
+            </if>
+            <if test="docName != null and docName != ''">
+                doc_name = #{docName},
+            </if>
+            <if test="docUrl != null and docUrl != ''">
+                doc_url = #{docUrl},
+            </if>
+            <if test="isVideo != null and isVideo != ''">
+                is_video = #{isVideo},
+            </if>
+            <if test="videoNo != null">
+                video_no = #{videoNo},
+            </if>
+            <if test="videoName != null and videoName != ''">
+                video_name = #{videoName},
+            </if>
+            <if test="videoLength != null and videoLength != ''">
+                video_length = #{videoLength},
+            </if>
+            <if test="videoVid != null and videoVid != ''">
+                video_vid = #{videoVid},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from education_course.course_chapter_period where id = #{id}
+    </delete>
+
+</mapper>

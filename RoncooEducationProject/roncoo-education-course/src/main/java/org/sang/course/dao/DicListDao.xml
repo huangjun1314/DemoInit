@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.course.dao.DicListDao">
+
+    <resultMap type="org.sang.config.pojo.course.DicList" id="DicListMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="fieldId" column="field_id" jdbcType="INTEGER"/>
+        <result property="fieldKey" column="field_key" jdbcType="VARCHAR"/>
+        <result property="fieldValue" column="field_value" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="DicListMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, field_id, field_key, field_value
+        from education_course.dic_list
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="DicListMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, field_id, field_key, field_value
+        from education_course.dic_list
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="DicListMap">
+        select
+          id, gmt_create, gmt_modified, status_id, sort, field_id, field_key, field_value
+        from education_course.dic_list
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="fieldId != null">
+                and field_id = #{fieldId}
+            </if>
+            <if test="fieldKey != null and fieldKey != ''">
+                and field_key = #{fieldKey}
+            </if>
+            <if test="fieldValue != null and fieldValue != ''">
+                and field_value = #{fieldValue}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into education_course.dic_list(gmt_create, gmt_modified, status_id, sort, field_id, field_key, field_value)
+        values (#{gmtCreate}, #{gmtModified}, #{statusId}, #{sort}, #{fieldId}, #{fieldKey}, #{fieldValue})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update education_course.dic_list
+        <set>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified},
+            </if>
+            <if test="statusId != null">
+                status_id = #{statusId},
+            </if>
+            <if test="sort != null">
+                sort = #{sort},
+            </if>
+            <if test="fieldId != null">
+                field_id = #{fieldId},
+            </if>
+            <if test="fieldKey != null and fieldKey != ''">
+                field_key = #{fieldKey},
+            </if>
+            <if test="fieldValue != null and fieldValue != ''">
+                field_value = #{fieldValue},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from education_course.dic_list where id = #{id}
+    </delete>
+
+</mapper>

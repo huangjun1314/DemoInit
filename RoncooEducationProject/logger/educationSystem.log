@@ -1,0 +1,246 @@
+2020/05/13-01:57:42  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-01:57:42  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1437 ms
+2020/05/13-01:57:43  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-01:57:43  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-01:57:43  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-01:57:43  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-01:58:03  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-01:58:03  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-01:58:03  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-01:58:03  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 8 ms
+2020/05/13-01:59:36  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-01:59:36  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1572 ms
+2020/05/13-01:59:36  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-01:59:36  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-01:59:36  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-01:59:37  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-01:59:50  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-01:59:50  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1616 ms
+2020/05/13-01:59:52  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-01:59:52  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-01:59:52  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-01:59:52  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-02:00:03  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-02:00:03  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-02:00:03  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-02:00:03  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2020/05/13-02:01:38  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:01:38  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2393 ms
+2020/05/13-02:01:39  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-02:01:39  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-02:01:39  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-02:01:39  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-02:02:06  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-02:02:06  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-02:02:06  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-02:02:06  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 9 ms
+2020/05/13-02:07:20  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:07:20  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1709 ms
+2020/05/13-02:07:21  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-02:07:21  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-02:07:21  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-02:07:21  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-02:07:43  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-02:07:43  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-02:07:43  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-02:07:43  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 28 ms
+2020/05/13-02:16:11  [main] ERROR org.springframework.boot.SpringApplication- Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.sang.RoncooEducationSystemApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'swaggerConfig' for bean class [org.sang.config.SwaggerConfig] conflicts with existing, non-compatible bean definition of same name and class [org.sang.systemConfig.SwaggerConfig]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.sang.RoncooEducationSystemApplication.main(RoncooEducationSystemApplication.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'swaggerConfig' for bean class [org.sang.config.SwaggerConfig] conflicts with existing, non-compatible bean definition of same name and class [org.sang.systemConfig.SwaggerConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 13 common frames omitted
+2020/05/13-02:17:13  [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'createRestApi', defined in class path resource [org/sang/config/SwaggerConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/sang/systemConfig/SwaggerConfig_system.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2020/05/13-02:18:15  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:18:15  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2059 ms
+2020/05/13-02:18:15  [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.sang.dao.WebsiteNavDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.sang.dao.WebsiteNavDao' in your configuration.
+
+2020/05/13-02:22:02  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:22:02  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1600 ms
+2020/05/13-02:22:02  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-02:22:02  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-02:22:02  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-02:22:03  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-02:22:21  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-02:22:21  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-02:22:21  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-02:22:21  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 8 ms
+2020/05/13-02:24:23  [main] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:24:23  [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2326 ms
+2020/05/13-02:24:23  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-02:24:23  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 2 mappings in 'requestMappingHandlerMapping'
+2020/05/13-02:24:23  [main] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020/05/13-02:24:23  [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-02:24:28  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-02:24:28  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-02:24:28  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-02:24:28  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 11 ms
+2020/05/13-02:35:56  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:35:56  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1457 ms
+2020/05/13-02:35:57  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-02:35:57  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-02:35:57  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-02:35:57  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-02:35:58  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-02:35:58  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-02:35:58  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-02:35:58  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2020/05/13-02:36:53  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-02:36:53  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1490 ms
+2020/05/13-02:36:54  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-02:36:54  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-02:36:54  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-02:36:54  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-13:52:23  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-13:52:23  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1825 ms
+2020/05/13-13:52:24  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-13:52:24  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-13:52:24  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-13:52:24  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-13:52:27  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-13:52:27  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-13:52:27  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-13:52:27  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 11 ms
+2020/05/13-13:56:00  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-13:56:00  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1981 ms
+2020/05/13-13:56:00  [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.sang.dao.WebsiteNavDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.sang.dao.WebsiteNavDao' in your configuration.
+
+2020/05/13-13:56:12  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-13:56:12  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1969 ms
+2020/05/13-13:56:12  [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.sang.dao.WebsiteNavDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.sang.dao.WebsiteNavDao' in your configuration.
+
+2020/05/13-13:59:34  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-13:59:34  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1732 ms
+2020/05/13-13:59:35  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-13:59:35  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-13:59:35  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-13:59:35  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-13:59:38  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-13:59:38  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-13:59:38  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-13:59:38  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 9 ms
+2020/05/13-14:00:57  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-14:00:57  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2052 ms
+2020/05/13-14:00:58  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-14:00:58  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-14:00:58  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-14:00:58  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-14:00:59  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-14:00:59  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-14:00:59  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-14:00:59  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 13 ms
+2020/05/13-14:52:47  [restartedMain] DEBUG org.springframework.web.context.ContextLoader- Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020/05/13-14:52:47  [restartedMain] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1405 ms
+2020/05/13-14:52:48  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- 7 mappings in 'requestMappingHandlerMapping'
+2020/05/13-14:52:48  [restartedMain] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Patterns [/**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2020/05/13-14:52:48  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020/05/13-14:52:48  [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020/05/13-14:52:49  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Detected StandardServletMultipartResolver
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020/05/13-14:52:49  [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 7 ms
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/system/websiteNav/selectOne", parameters={}
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.sang.systemController.WebsiteNavController#selectOne(Long)
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Nothing to write: null body
+2020/05/13-14:52:49  [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/favicon.ico", parameters={}
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped to ResourceHttpRequestHandler ["classpath:/static/"]
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler- Resource not found
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 404 NOT_FOUND
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- "ERROR" dispatch for GET "/error", parameters={}
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor- Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor- Writing [{timestamp=Wed May 13 14:52:49 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020/05/13-14:52:49  [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet- Exiting from "ERROR" dispatch, status 404
+2020/05/13-14:52:52  [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/system/websiteNav/selectOne", parameters={}
+2020/05/13-14:52:52  [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.sang.systemController.WebsiteNavController#selectOne(Long)
+2020/05/13-14:52:52  [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+2020/05/13-14:52:52  [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Nothing to write: null body
+2020/05/13-14:52:52  [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-14:52:54  [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/system/websiteNav/selectOne", parameters={}
+2020/05/13-14:52:54  [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.sang.systemController.WebsiteNavController#selectOne(Long)
+2020/05/13-14:52:54  [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json]
+2020/05/13-14:52:54  [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Nothing to write: null body
+2020/05/13-14:52:54  [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-14:53:24  [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/system/websiteNav/selectOne?id=1", parameters={masked}
+2020/05/13-14:53:24  [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.sang.systemController.WebsiteNavController#selectOne(Long)
+2020/05/13-14:53:24  [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2020/05/13-14:53:24  [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Nothing to write: null body
+2020/05/13-14:53:24  [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK
+2020/05/13-14:53:44  [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet- GET "/system/websiteNav/selectOne?id=1060100633685209089", parameters={masked}
+2020/05/13-14:53:44  [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped to org.sang.systemController.WebsiteNavController#selectOne(Long)
+2020/05/13-14:53:44  [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2020/05/13-14:53:44  [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor- Writing [org.sang.systementity.WebsiteNav@2281f428]
+2020/05/13-14:53:44  [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet- Completed 200 OK

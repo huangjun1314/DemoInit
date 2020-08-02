@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.mapper1.sysrole.SysRoleMapper">
+
+    <select id="getAllRole" resultType="org.sang.entity.SysRole">
+        SELECT id,gmt_create as gmtCreate,gmt_modified as gmtModified,status_id as statusId
+                  ,sort,role_name as roleName,remark
+        FROM sys_role
+    </select>
+
+    <insert id="insertRole" parameterType="String">
+        INSERT INTO sys_role(role_name,remark)
+        VALUES(#{roleName},#{remark})
+    </insert>
+
+    <update id="updateRole" parameterType="String">
+        UPDATE sys_role
+        <set>
+            <if test="roleName != null and roleName != ''">
+                role_name=#{roleName},
+            </if>
+
+            <if test="remark != null and remark != ''">
+                remark=#{remark},
+            </if>
+
+            <if test="statusId != null and statusId != ''">
+                status_id=#{statusId},
+            </if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <delete id="delRoleById" parameterType="String">
+        DELETE FROM sys_role WHERE id=#{id}
+    </delete>
+
+    <select id="queryAll" resultMap="SysRoleMap">
+        select
+        id, gmt_create, gmt_modified, status_id, sort, name, nameZh
+        from education_system.sys_role
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gmtCreate != null">
+                and gmt_create = #{gmtCreate}
+            </if>
+            <if test="gmtModified != null">
+                and gmt_modified = #{gmtModified}
+            </if>
+            <if test="statusId != null">
+                and status_id = #{statusId}
+            </if>
+            <if test="sort != null">
+                and sort = #{sort}
+            </if>
+            <if test="roleName != null and roleName != ''">
+                and role_name = #{roleName}
+            </if>
+            <if test="remark != null and remark != ''">
+                and remark = #{remark}
+            </if>
+        </where>
+    </select>
+
+    <resultMap type="org.sang.entity.SysRole" id="SysRoleMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
+        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+        <result property="statusId" column="status_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="roleName" column="role_name" jdbcType="VARCHAR"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>

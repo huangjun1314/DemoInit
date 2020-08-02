@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.mapper2.user.UserMapper">
+
+    <select id="loadUserByUsername" resultType="org.sang.entity.User">
+        SELECT id,gmt_create as gmtCreate,gmt_modified as gmtModified,status_id as statusId
+                  ,user_no as userNo,mobile,mobile_salt as moblieSalt,mobile_psw as mobilePsw
+                  ,user_source as userSource
+        FROM user WHERE `mobile`=#{mobile}
+    </select>
+
+    <update id="modifyUserByMobile" parameterType="String">
+        UPDATE USER SET mobile_psw=#{mobilePsw} WHERE mobile=#{mobile}
+    </update>
+
+    <insert id="insertUser" parameterType="int" >
+        INSERT INTO USER(gmt_create,gmt_modified,status_id,user_no,mobile,mobile_salt,mobile_psw,user_source)
+        VALUES(#{gmtCreate},#{gmtModified},#{statusId},#{userNo},#{mobile},#{mobileSalt},#{mobilePsw},#{userSource})
+    </insert>
+
+    <delete id="delUserByMobile" parameterType="int">
+        DELETE from user where mobile=#{mobile}
+    </delete>
+
+    <select id="selPlatForm" resultType="org.sang.entity.PlatForm">
+        SELECT id,gmt_create as gmtCreate,gmt_modified as gmtModified,status_id as statusId
+                  ,sort,mobile,client_id as clientId,client_secret as clientSecret
+                  ,client_name as clientName,remark
+        FROM platform
+    </select>
+
+</mapper>

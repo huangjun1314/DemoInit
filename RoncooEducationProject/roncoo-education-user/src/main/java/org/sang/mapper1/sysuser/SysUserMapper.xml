@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sang.mapper1.sysuser.SysUserMapper">
+
+    <select id="loadUserByUsername" resultType="org.sang.entity.SysUser">
+        SELECT id,gmt_create as gmtCreate,gmt_modified as gmtModified,status_id as statusId
+                  ,sort,user_no as userNo,mobile,real_name as realName,remark
+        FROM `sys_user` WHERE `mobile`=#{mobile}
+    </select>
+
+    <select id="getSysRoleListByUid" resultType="org.sang.entity.SysRole">
+        SELECT r.id,r.gmt_create as gmtCreate,r.gmt_modified as gmtModified,r.status_id as statusId
+                    ,r.sort,r.role_name as roleName,r.remark
+        FROM sys_role AS r,sys_role_user AS ru
+        WHERE r.id=ru.role_id AND ru.user_id=#{id}
+    </select>
+
+    <select id="getAllSysUserASByMobile" resultType="org.sang.entity.SysUser">
+        SELECT id,gmt_create as gmtCreate,gmt_modified as gmtModified,status_id as statusId
+                  ,sort,user_no as userNo,mobile,real_name as realName,remark
+        FROM sys_user
+        WHERE 1=1
+        <if test="mobile != null and mobile != ''">
+            AND mobile=#{mobile}
+        </if>
+    </select>
+
+    <select id="selSysUserCount" resultType="int">
+        select count(1) from sys_user
+    </select>
+
+    <insert id="insertSysUser" parameterType="org.sang.entity.SysUser">
+        INSERT INTO sys_user(id,status_id,sort,user_no,mobile,real_name,remark)
+        VALUES(#{id},#{statusId},#{sort},#{userNo},#{mobile},#{realName},#{remark})
+    </insert>
+
+    <update id="modifySysUser" parameterType="String">
+        UPDATE sys_user
+        <set>
+            <if test="realName != null and realName != ''">
+                real_name=#{realName},
+            </if>
+
+            <if test="sort != null and sort != 0">
+                sort=#{sort},
+            </if>
+
+            <if test="remark != null and remark != ''">
+                remark=#{remark}
+            </if>
+        </set>
+        WHERE mobile=#{mobile}
+    </update>
+
+    <delete id="delSysUserByMobile" parameterType="String">
+        DELETE from sys_user where mobile=#{mobile}
+    </delete>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-course" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-server-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-server-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/java/org/sang/trade/alipay/AlipayConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/java/org/sang/trade/alipay/PayController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/java/org/sang/trade/param/WxRequestParam.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/java/org/sang/trade/utilss/WXPayXmlUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/java/org/sang/trade/utilss/WxPayUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/java/org/sang/trade/weixin/WxPayController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/applicationContext-alipay.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/static/jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/static/jsp/index1.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/static/jsp/success.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/static/jsp2/index.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/static/jsp2/notice.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/templates/index.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/templates/index1.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/templates/notice.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-trade/src/main/resources/templates/success.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/roncoo-education-user" charset="UTF-8" />
+  </component>
+</project>

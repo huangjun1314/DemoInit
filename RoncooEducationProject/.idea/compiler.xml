@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="roncoo-education-course" />
+        <module name="roncoo-education-gateway" />
+        <module name="roncoo-education-job" />
+        <module name="roncoo-education-server-config" />
+        <module name="roncoo-education-server-eureka" />
+        <module name="roncoo-education-system" />
+        <module name="roncoo-education-trade" />
+        <module name="roncoo-education-user" />
+        <module name="RoncooEducationProject" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="roncoo-education-course" target="1.8" />
+      <module name="roncoo-education-gateway" target="1.8" />
+      <module name="roncoo-education-job" target="1.8" />
+      <module name="roncoo-education-server-config" target="1.8" />
+      <module name="roncoo-education-server-eureka" target="1.8" />
+      <module name="roncoo-education-system" target="1.8" />
+      <module name="roncoo-education-trade" target="1.8" />
+      <module name="roncoo-education-user" target="1.8" />
+      <module name="RoncooEducationProject" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

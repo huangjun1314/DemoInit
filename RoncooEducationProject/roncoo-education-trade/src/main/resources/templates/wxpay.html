@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>I微信订单页</title>
+
+</head>
+<body>
+商品订单号：<input type="text" id="orderNo" th:value="${orderNo}"  />
+<hr class="one_line">
+
+课程名称：<input type="text" id="courseName" th:value="${courseName}"  />
+<hr class="one_line">
+
+应付金额：<input type="text" id="pricePayable" th:value="${pricePayable}"  />
+<hr class="one_line">
+
+优惠金额:<input type="text" id="priceDiscount" th:value="${priceDiscount}"  />
+<hr class="one_line">
+
+实付金额：<input type="text" id="money" th:value="${pricePaid}"/>
+<hr class="one_line">
+
+备注：<input id="body" type="text" th:value="${remark}"/>
+<hr class="one_line">
+
+
+<input type="button" VALUE="确 认 信 息" id="pay">
+
+<div id="code">
+
+</div>
+<script src="http://localhost:8085/jquery-3.3.1.min.js"></script>
+<script src="http://localhost:8085/qrcode.js"></script>
+
+<script type="text/javascript">
+    $("#pay").click(function () {
+        var body = $("#body").val();
+        var money = $("#money").val();
+        var orderNo = $("#orderNo").val();
+        $.ajax({
+            url: "http://localhost:8085/user/wxPayController/pay",
+            data: {"body": 'a', "money": money, "orderNo": orderNo},
+            type: "post",
+            dataType: 'text',
+            success: function (data) {
+                console.log(data);
+                //参数1表示图像大小，取值范围1-10；参数2表示质量，取值范围'L','M','Q','H'
+                var qr = qrcode(10, 'H');
+
+                qr.addData(data);
+                qr.make();
+                $("#code").html(qr.createImgTag());
+                setInterval(query, 5000);
+            }
+        });
+    });
+
+    function query() {
+        $.ajax({
+            url: "http://localhost:8085/user/wxPayController/query",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                if (data == true) {
+                    location.href = "http://localhost:8085/user/wxPayController/success";
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    }
+</script>
+
+
+</body>
+</html>
