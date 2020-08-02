@@ -31,6 +31,7 @@ public class MsgController {
      */
     @GetMapping("selectOne")
     public Msg selectOne(Long id) {
+		System.out.println(id);
         return this.msgService.queryById(id);
     }
 
